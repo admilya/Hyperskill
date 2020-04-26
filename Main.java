@@ -14,7 +14,7 @@ public class Main {
         return -1;
     }
 
-    public static void game_card(){
+    public static void flashcard(){
         System.out.println("Input the number of cards:");
 
         LinkedList<String> List1=new LinkedList<String>();
@@ -79,7 +79,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        game_card();
+        flashcard();
         }
 }
 
