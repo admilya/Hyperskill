@@ -1,3 +1,4 @@
+package flashcard;
 
 import java.util.*;
 
@@ -22,7 +23,7 @@ public class Main {
         Scanner scanner1 = new Scanner(System.in);
 
         int kol = scanner1.nextInt();
-        int serch = kol;
+        int search = kol;
         int index = 0;
 
         while (true)
@@ -55,7 +56,7 @@ public class Main {
 
         int temp = 0;
         while (true){
-            serch--;
+            search--;
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("Print the definition of " + "\"" + List1.get(temp) + "\":");
@@ -65,20 +66,20 @@ public class Main {
                 System.out.println("Correct answer!");
             }
             else if (IndexList(List2, otvet) != -1) {
-                    System.out.println("Wrong answer. The correct one is "+ "\"" +List2.get(temp) +"\"" + ", you've just written the definition of "+ "\"" + List1.get(IndexList(List2, otvet)) + "\"" +".");
+                    System.out.println("Wrong answer. The correct one is "+ "\"" +List2.get(temp) +"\"" +
+                            ", you've just written the definition of "+ "\"" + List1.get(IndexList(List2, otvet)) + "\"" +".");
                 }
             else {
                 System.out.println("Wrong answer. The correct one is" + "\"" +List2.get(temp) +"\"" );
             }
 
             temp++;
-            if (serch == 0) break;
+            if (search == 0) break;
         }
     }
 
     public static void main(String[] args) {
         game_card();
-
         }
 }
 
